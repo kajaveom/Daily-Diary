@@ -1,0 +1,21 @@
+<%- include("partials/Header.ejs") %>
+
+
+
+<div class="input-box">
+    <form action="/mydiary" method="post">
+      <input type="date" name="searchDate" class="date">
+      <button type="submit" name="button" class="search-btn">
+           Search
+      </button>
+    </form>
+
+</div>
+
+<div class="today-diary">
+      <h1> <%= date %></h1>
+      <br>
+      <%= content %>
+</div>
+
+<%- include("partials/Footer.ejs") %>

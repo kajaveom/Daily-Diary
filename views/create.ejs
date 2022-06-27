@@ -1,0 +1,13 @@
+<%- include("partials/Header.ejs") %>
+
+    <form action="/post" method="post">
+          <div class="content">
+              <h1 class="date"><%= date %></h1>
+              <button class="clear" type="submit" name="action" value="clear">Clear</button>
+              <button class="post" type="submit" name="action" value="post">Post</button>
+              <textarea name="content" rows="16" cols="150" class="dairy-content"><%= content %></textarea>
+          </div>
+    </form>
+
+
+<%- include("partials/Footer.ejs") %>

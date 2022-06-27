@@ -1,0 +1,20 @@
+<%- include("partials/Header.ejs") %>
+
+  <div class="input-box">
+      <h1 class="date"><%= date %></h1>
+      <form action="/create" method="post">
+        <button type="submit" name="button">
+            <span class="plus">+</span> Create New
+        </button>
+      </form>
+
+  </div>
+
+
+  <div class="today-diary">
+        <h1>Today's Page</h1>
+        <br>
+        <%= todayContent %>
+  </div>
+
+<%- include("partials/Footer.ejs") %>
